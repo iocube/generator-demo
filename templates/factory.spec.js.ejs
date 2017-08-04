@@ -1,0 +1,16 @@
+describe('<%= factoryName %>', function() {
+
+    var <%= factoryName %>;
+
+    beforeEach(function() {
+        module('<%= moduleName %>');
+    });
+
+    beforeEach(inject(function(_<%= factoryName %>_) {
+        <%= factoryName %> = _<%= factoryName %>_;
+    }));
+
+    describe('', function() {
+        it('should', function() {});
+    });
+});

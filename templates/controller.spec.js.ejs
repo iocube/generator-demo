@@ -1,0 +1,19 @@
+describe('<%= controllerName %>', function() {
+    var ctrl, $controller, $scope;
+
+    beforeEach(function () {
+        module('<%= moduleName %>');
+        module('templates');
+    });
+
+    beforeEach(inject(function (_$controller_, $rootScope) {
+        $controller = _$controller_;
+        $scope = $rootScope.$new();
+    }));
+
+    it('should ', function() {
+        ctrl = $controller('<%= controllerName %> as <%= controllerShortName %>', {
+            $scope: $scope
+        });
+    });
+});

@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "description": "",
   "files": [
-    "generators"
+    "app",
+    "controller",
+    "directive",
+    "factory",
+    "state"
   ],
   "keywords": [
     "yeoman-generator"
